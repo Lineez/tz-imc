@@ -1,11 +1,11 @@
 <template>
-    <main></main>
+    <footer></footer>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 
 export default defineComponent({});
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped></style>

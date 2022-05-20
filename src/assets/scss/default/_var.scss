@@ -5,6 +5,14 @@
     // font-family
     --font-family_Montserrat: "Montserrat", sans-serif;
     --font-family_Lato: "Lato", sans-serif;
+}
+
+[data-theme="light"] {
+    // colors
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+[data-theme="dark"] {
     // colors
     --color-black: #000000;
     --color-white: #ffffff;

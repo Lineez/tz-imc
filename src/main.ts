@@ -1,10 +1,10 @@
 import { createApp } from "vue";
+import { createPinia } from "pinia";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import components from "@/components/ui";
 import directives from "@/directives/index";
 import router from "@/router/index";
-import store from "@/store";
 // global mixin & variables
 import "@/assets/scss/default/style.scss";
 // global fonts
@@ -12,6 +12,7 @@ import "@/assets/fonts/Montserrat/style.css";
 import "@/assets/fonts/Lato/style.css";
 
 const app = createApp(App);
+const pinia = createPinia();
 
 // register global ui component
 components.forEach((component: any) => {
@@ -22,4 +23,14 @@ directives.forEach((directive) => {
     app.directive(directive.name, directive);
 });
 
-app.use(router).use(store).mount("#app");
+// // global store prop
+// function SecretPiniaPlugin() {
+//     return { secret: "the cake is a lie" };
+// }
+// pinia.use(SecretPiniaPlugin);
+
+// // in another file
+// const store = useStore()
+// store.secret // 'the cake is a lie'
+
+app.use(router).use(pinia).mount("#app");
