@@ -1,4 +1,11 @@
-# shaurma2
+# vue-default-ts-pinia
+
+## Description
+    node 16.13.1
+
+## Future todo
+1. ~~add .env~~
+2. preload fonts
 
 ## Project setup
 ```

@@ -5,14 +5,16 @@ import "./registerServiceWorker";
 import directives from "@/directives/index";
 import router from "@/router/index";
 
+// APP
 const app = createApp(App);
-const pinia = createPinia();
 
 // register global directives
 directives.forEach((directive) => {
     app.directive(directive.name, directive);
 });
 
+// STORE
+const pinia = createPinia();
 // // global store prop
 // function SecretPiniaPlugin() {
 //     return { secret: "the cake is a lie" };

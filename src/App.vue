@@ -11,4 +11,9 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+// обязательно укажите хотя бы одну переменную, например шрифт, иначе глобальные стили не подключатся
+* {
+    font-family: var(--font-family_Montserrat);
+}
+</style>
