@@ -10,7 +10,7 @@ const app = createApp(App);
 
 // register global directives
 directives.forEach((directive) => {
-    app.directive(directive.name, directive);
+  app.directive(directive.name, directive);
 });
 
 // STORE

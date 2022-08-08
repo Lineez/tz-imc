@@ -1,7 +1,8 @@
 # vue-default-ts-pinia
 
 ## Description
-    node 16.13.1
+  - node 16.13.1
+  - need extensions: vetur (maybe volar), eslint, path-autocomplete \ path-intellisense
 
 ## Future todo
 1. ~~add .env~~

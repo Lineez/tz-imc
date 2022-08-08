@@ -18,7 +18,7 @@ trim_trailing_whitespace = true
 indent_style = space
 
 # Размер отстутов
-indent_size = 4
+indent_size = 2
 
 # Кодировка
 charset = utf-8
