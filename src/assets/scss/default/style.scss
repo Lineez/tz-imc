@@ -1,6 +1,7 @@
 // global mixin & variables
 @import "./var";
-@import "./mixin";
+// we include mixins as global scss in project
+// @import "./mixin";
 @import "./null";
 // global fonts
 @import "@/assets/fonts/Montserrat/style.css";
